@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="shortcut icon" href="images/to-do-list.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <section class="container">
+    <h1 class="header-title text-center m-4 py-4">Bookmark</h1>
+    <div class="bookmark-body py-5 position-relative">
+      
+      <h2 class="text-center">
+        <i class="fa-solid fa-bookmark"></i> 
+        Create your Favorite bookmark
+        <i class="fa-solid fa-bookmark"></i>
+      </h2>
+      
+      <p>site name</p>
+      <input type="text" id="websiteIndex" oninput="validateWebsiteInput(this)" placeholder="Bookmark Name" class="w-100 rounded-2 form-control">
+      <p>site URL</p>
+      <input type="text" id="websiteName" oninput="validateWebsiteInput(this)" placeholder="Website URL" class="form-control w-100 rounded-2">
+      <div class=" text-center">
+        <button onclick="addWebsite()"
+          class="btn btn-danger justify-content-center align-items-center flex-column px-5 my-4">Submit</button>
+      </div>
+    </div>
+    <div class="container">
+      <table class="table mt-4 text-center bg-light" >
+        <thead>
+          <tr>
+            <th class="text-capitalize">index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableContent">
+           <!-- <th>mohsen</th>
+          <th>mohsen</th>
+          <th id="websiteVisitBtn"> <button class="btn btn-danger">Visit</button></th>
+          <th id="websiteDeleteBtn"> <button class="btn btn-info"> Delete</button></th>  -->
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

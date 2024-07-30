@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Caption-B';
+    src: url(../webfonts/PTSansCaption-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Caption-R';
+    src: url(../webfonts/PTSansCaption-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Pacifico-R';
+    src: url(../webfonts/Pacifico-Regular.ttf);
+}
+
+
+
+/* Global styles */
+
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,.h3,h6 {
+    font-family: Pacifico-R;
+}
+
+.fs-7 {
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+/* body */
+body {
+    background-color: #f7ecde;
+}
+
+
+
+/* !header */
+
+.header-title{
+    font-size: 50px;
+}
+
+.bookmark-body{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+
+
+.bookmark-body h2{
+    font-size: 40px;
+background-image: linear-gradient(to right, #27b853, #ffe900);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
